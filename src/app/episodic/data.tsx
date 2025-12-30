@@ -1,5 +1,26 @@
 export const projects = [
   {
+    titleEn: 'HEWELIUSZ',
+    title: 'HEWELIUSZ',
+    titleEs: 'HEWELIUSZ',
+    href: '/episodic/heweliusz',
+    img: '/heweliusz.jpeg',
+  },
+  {
+    titleEn: 'THE GRINGO HUNTERS',
+    title: 'THE GRINGO HUNTERS',
+    titleEs: 'THE GRINGO HUNTERS',
+    href: '/episodic/the-gringo-hunters',
+    img: '/the-gringo-hunters.jpeg',
+  },
+  {
+    titleEn: 'EARTHEATER',
+    title: 'COMETIERRA',
+    titleEs: 'COMETIERRA',
+    href: '/episodic/cometierra',
+    img: '/cometierra-eartheater.jpg',
+  },
+  {
     titleEn: 'CTRL + ALT + DESIRE',
     titleEs: 'CTRL + ALT + DESIRE',
     href: '/episodic/ctrl-alt-desire',

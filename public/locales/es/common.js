@@ -96,4 +96,34 @@ export const spanish = {
       'Narra la vida y la caída de Grant Amato, condenado por asesinar a sus padres y a su hermano tras una relación obsesiva con una modelo de cámara de Internet.',
     date: 'Abril 2024',
   },
+  heweliusz: {
+    title: 'HEWELIUSZ',
+    synopsis:
+      'En 1993, el transbordador polaco MS Jan Heweliusz vuelca frente a la costa de Rügen, en el mar Báltico. La tripulación y los pasajeros luchan por sobrevivir a una letal tormenta mientras en tierra sus familias, destrozadas, buscan justicia y respuestas.',
+    date: 'Noviembre 2025',
+  },
+  theGringoHunters: {
+    title: 'THE GRINGO HUNTERS',
+    synopsis:
+      'Este escuadrón mexicano de policía de élite tiene una misión única: capturar a fugitivos estadounidenses que huyen hacia el sur, cruzando la frontera. Inspirada en hechos reales.',
+    date: 'Julio 2025',
+  },
+  cometierra: {
+    title: 'COMETIERRA',
+    synopsis:
+      'Una chica de las afueras de la Ciudad de México adquiere el poder de comunicarse con la tierra. Resolviendo crímenes y uniéndose a amigos marginados, enfrenta su turbulento pasado en medio de la violencia vecinal y desapariciones.',
+    date: 'Octubre 2025',
+  },
+  /*bahadur: {
+    title: '120 BAHADUR',
+    synopsis:
+      'Los soldados indios luchan contra las tropas chinas durante la guerra sino-india de 1962, impidiendo una posible ocupación de la región de Ladakh en la batalla de Rezang La.',
+    date: 'Noviembre 2025',
+  },*/
+  elMensaje: {
+    title: 'EL MENSAJE',
+    synopsis:
+      'En la zona rural de Argentina, una niña posee un don extraordinario para comunicarse con los animales. Sus tutores ven en esta habilidad una oportunidad para ganar dinero ofreciendo consultas.',
+    date: 'Febrero 2025',
+  }
 };

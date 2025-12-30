@@ -1,5 +1,25 @@
 export const projects = [
   {
+    titleEn: 'HEWELIUSZ',
+    title: 'HEWELIUSZ',
+    titleEs: 'HEWELIUSZ',
+    href: '/episodic/heweliusz',
+    img: '/heweliusz.jpeg',
+  },
+  {
+    titleEn: 'THE GRINGO HUNTERS',
+    title: 'THE GRINGO HUNTERS',
+    titleEs: 'THE GRINGO HUNTERS',
+    href: '/episodic/the-gringo-hunters',
+    img: '/the-gringo-hunters.jpeg',
+  },
+  {
+    titleEn: 'THE MESSAGE',
+    titleEs: 'EL MENSAJE',
+    href: '/features/el-mensaje',
+    img: '/el-mensaje-the-message.jpeg',
+  },
+  {
     titleEn: '(UN)LUCKY SISTERS',
     titleEs: 'LAS HERMANAS FANTASTICAS',
     img: 'lhf.jpg',

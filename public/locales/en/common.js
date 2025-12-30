@@ -96,4 +96,35 @@ export const english = {
       'Chronicles the life and downfall of Grant Amato, who was convicted of murdering his parents and brother following an obsessive relationship with an internet cam model.',
     date: 'April 2024',
   },
+  heweliusz: {
+    title: 'HEWELIUSZ',
+    synopsis:
+      'In 1993, the Polish ferry MS Jan Heweliusz capsizes off the coast of Rügen in the Baltic Sea. The crew and passengers struggle to survive a lethal storm while ashore their shattered families search for justice and answers.',
+    date: 'Nov 2025',
+  },
+  theGringoHunters: {
+    title: 'THE GRINGO HUNTERS',
+    synopsis:
+      'This elite Mexican police squad has a unique mission: to capture American fugitives who flee south across the border. Inspired by true events.',
+    date: 'Jul 2025',
+  },
+  cometierra: {
+    title: 'EARTHEATER',
+    synopsis:
+      'A girl from Mexico City suburbs gains powers to communicate with the earth, solving crimes. Joining misfit friends, she confronts her troubled past amid neighborhood violence and disappearances, discovering her identity.',
+    date: 'Oct 2025',
+  },  
+  /*bahadur: {
+    title: '120 BAHADUR',
+    synopsis:
+      'Valiant Indian soldiers fight against Chinese troops during the 1962 Sino-Indian War, preventing a potential occupation of Ladakh region in the Battle of Rezang La.',
+    date: 'Nov 2025',
+  },*/
+  elMensaje: {
+    title: 'THE MESSAGE',
+    synopsis:
+      'In the Argentinian countryside, a child\'s special gift gives her opportunistic guardians the idea of offering consultations with an animal medium in order to earn a living.',
+    date: 'Feb 2025',
+  }
 };
+

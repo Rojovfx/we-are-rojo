@@ -1,5 +1,11 @@
 export const projects = [
   {
+    titleEn: 'THE MESSAGE',
+    titleEs: 'EL MENSAJE',
+    href: '/features/el-mensaje',
+    img: '/el-mensaje-the-message.jpeg',
+  },
+  {
     titleEn: '(UN)LUCKY SISTERS',
     titleEs: 'LAS HERMANAS FANTASTICAS',
     href: '/features/las-hermanas-fantasticas',
