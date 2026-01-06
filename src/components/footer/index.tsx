@@ -7,11 +7,11 @@ const Footer = () => {
     <footer className="footer">
       <p className="country">
         BUENOS AIRES, ARGENTINA <br className="mobile-break" />{' '}
-        <span className="separator"> - </span>ISLAS CANARIAS, ESPAÑA
+        <span className="separator"> - </span>TENERIFE, ESPAÑA
       </p>
       <div className="legal">
         <div>
-          <p>Copyright©2025 ROJO Studio </p>
+          <p>Copyright©2026 ROJO Studio </p>
         </div>
         <div className="social-media">
           {socialMedia.map((social) => (

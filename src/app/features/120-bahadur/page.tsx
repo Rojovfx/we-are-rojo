@@ -7,14 +7,14 @@ import '../../pagesStyles.css';
 const Page = () => {
   const { useLanguageSwitcher } = useLangHook();
   const i18n = useLanguageSwitcher();
-  const { title, synopsis, date } = i18n.elMensaje;
+  const { title, synopsis, date } = i18n.bahadur;
   const { synopsisWord, productionCompany, releaseDate, DOP } =
     i18n.commonWording;
 
   return (
     <div className="page-container">
       <VimeoPlayer
-        src={'https://player.vimeo.com/video/1093096485'}
+        src={'https://player.vimeo.com/video/1136135464?h=8a343254eb'}
       />
       <div className="info-container">
         <h1 className="title">{title}</h1>
@@ -37,13 +37,13 @@ const Page = () => {
 
           <div>
             <p className="text">
-              <span>{productionCompany}:</span> Rita Cine, Insomnia Films, Amore Cine, Blurr Stories, Pan Contenidos, Animista Cine
+              <span>{productionCompany}:</span> Excel Entertainment & Trigger Happy Studios
             </p>
             <p className="text">
-              <span>Director:</span> Iván Fund
+              <span>Director:</span> Razneesh Ghai
             </p>
             <p className="text">
-              <span>{DOP}:</span> Gustavo Schiaffino
+              <span>{DOP}:</span> Tetsuo Nagata
             </p>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Page = () => {
             <span>{releaseDate}:</span> {date}{' '}
           </p>
           <p className="text">
-            <span>VFX Shots:</span> 38{' '}
+            <span>VFX Shots:</span> 51{' '}
           </p>
         </div>
         <BackArrow href={'/features'} />

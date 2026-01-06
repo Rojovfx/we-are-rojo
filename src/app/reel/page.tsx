@@ -8,7 +8,7 @@ const Page = () => {
       <VimeoPlayer
         src={'https://player.vimeo.com/video/910187264?h=2cd41c1f82'}
       />
-      <h1 className="title">REEL 2025</h1>
+      <h1 className="title">REEL 2026</h1>
     </div>
   );
 };

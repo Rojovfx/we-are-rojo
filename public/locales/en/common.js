@@ -1,6 +1,6 @@
 export const english = {
   home: {
-    title: 'WE ARE ROJO STUDIO',
+    title: 'ROJO Studio',
     latestWork: 'LATEST WORK',
     works: 'WORKS',
   },
@@ -114,12 +114,12 @@ export const english = {
       'A girl from Mexico City suburbs gains powers to communicate with the earth, solving crimes. Joining misfit friends, she confronts her troubled past amid neighborhood violence and disappearances, discovering her identity.',
     date: 'Oct 2025',
   },  
-  /*bahadur: {
+  bahadur: {
     title: '120 BAHADUR',
     synopsis:
       'Valiant Indian soldiers fight against Chinese troops during the 1962 Sino-Indian War, preventing a potential occupation of Ladakh region in the Battle of Rezang La.',
     date: 'Nov 2025',
-  },*/
+  },
   elMensaje: {
     title: 'THE MESSAGE',
     synopsis:

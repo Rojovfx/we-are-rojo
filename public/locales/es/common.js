@@ -1,6 +1,6 @@
 export const spanish = {
   home: {
-    title: 'SOMOS ROJO STUDIO',
+    title: 'ROJO Studio',
     latestWork: 'ULTIMOS TRABAJOS',
     works: 'TRABAJOS',
   },
@@ -114,12 +114,12 @@ export const spanish = {
       'Una chica de las afueras de la Ciudad de México adquiere el poder de comunicarse con la tierra. Resolviendo crímenes y uniéndose a amigos marginados, enfrenta su turbulento pasado en medio de la violencia vecinal y desapariciones.',
     date: 'Octubre 2025',
   },
-  /*bahadur: {
+  bahadur: {
     title: '120 BAHADUR',
     synopsis:
       'Los soldados indios luchan contra las tropas chinas durante la guerra sino-india de 1962, impidiendo una posible ocupación de la región de Ladakh en la batalla de Rezang La.',
     date: 'Noviembre 2025',
-  },*/
+  },
   elMensaje: {
     title: 'EL MENSAJE',
     synopsis:
