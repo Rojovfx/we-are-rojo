@@ -7,14 +7,14 @@ export const projects = [
   },
 
   {
-    titleEn: 'SAMGUNG | TECH GOES GREEN | CONSCIENCE',
-    titleEs: 'SAMGUNG | TECH GOES GREEN | CONSCIENCE',
+    titleEn: 'SAMSUNG | TECH GOES GREEN | CONSCIENCE',
+    titleEs: 'SAMSUNG | TECH GOES GREEN | CONSCIENCE',
     href: '/advertising/samsung/chip-with-conscience',
     img: '/samsung-chip.jpg',
   },
   {
-    titleEn: 'SAMGUNG | TECH GOES GREEN | OUT OF THE BOX',
-    titleEs: 'SAMGUNG | TECH GOES GREEN | OUT OF THE BOX',
+    titleEn: 'SAMSUNG | TECH GOES GREEN | OUT OF THE BOX',
+    titleEs: 'SAMSUNG | TECH GOES GREEN | OUT OF THE BOX',
     href: '/advertising/samsung/out-of-the-box',
     img: '/samsung-box.jpg',
   },

@@ -1,5 +1,11 @@
 export const projects = [
   {
+    titleEn: '120 BAHADUR',
+    titleEs: '120 BAHADUR',
+    href: '/features/120-bahadur',
+    img: '/120-bahadur.jpeg',
+  },
+  {
     titleEn: 'THE MESSAGE',
     titleEs: 'EL MENSAJE',
     href: '/features/el-mensaje',
