@@ -16,7 +16,7 @@ const Page = () => {
   useEffect(() => {
     const isMobile =
       typeof window !== 'undefined' &&
-      window.matchMedia('(max-width: 1120px)').matches;
+      window.matchMedia('(max-width: 1000px)').matches;
 
     if (isMobile) {
       setDeviceMobile(true);
@@ -45,8 +45,9 @@ const Page = () => {
         <Image
           src="/studio.jpg"
           alt="rojo studio"
-          width={deviceMobile ? 450 : 700}
+          width={deviceMobile ? 400 : 600}
           height={deviceMobile ? 300 : 400}
+          className="aboutImagen"
         />
       </div>
     </div>

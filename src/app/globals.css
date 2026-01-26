@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  background-color: black;
+  background-color: var(--colorFondo);
   color: white;
   font-family: 'Roboto Mono', monospace;
   font-optical-sizing: auto;
@@ -10,4 +10,54 @@
 
 a:-webkit-any-link {
   text-decoration: none;
+}
+
+:root {
+  --altoHeader: 65px;
+  --unidadDeEspacio: 5px;
+  --unidadDeEspacioVh: 2vh;
+  --margenTextoMobile: calc(var(--unidadDeEspacio) * 4);
+  --colorBordeLetras: black;
+  --colorFondo: black;
+  --zIndexVideoHomeMobile: 1;
+  --zIndexMenuMobile: 3;
+}
+
+.fondoTransparente{
+  background-color: transparent;
+}
+
+.textoConBorde{
+  font-weight: normal;
+  text-shadow: -2px 2px 3px rgba(0,0,0,0.9);
+}
+
+.cajaVaciaFullPantalla{
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cobertorFullPantalla{
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: calc(var(--zIndexMenuMobile) * 4);
+  opacity: 1;
+  transition: all 0.5s;
+  /*animation:
+    fundido 1s 1s forwards,
+    quitar 0.2s 2s forwards;*/
+}
+
+@keyframes fundido {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes quitar {
+  from { display: block; }
+  to { display: none; z-index: 0;}
 }

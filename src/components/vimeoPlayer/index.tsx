@@ -1,13 +1,17 @@
 import './styles.css';
 export interface VimeoPlayerProps {
   src: string;
+  clase?: string;
+  claseIframe?: string;
 }
 
-const vimeoPlayer = ({ src }: VimeoPlayerProps) => {
+const vimeoPlayer = ({ src, clase, claseIframe}: VimeoPlayerProps) => {
+  const claseR = clase ? clase: "video-container"
+  const claseIframeR = claseIframe ? claseIframe: "video"
   return (
-    <div className="video-container">
+    <div className={claseR}>
       <iframe
-        className="video"
+        className={claseIframeR}
         title="vimeo-player"
         src={src}
         frameBorder="0"

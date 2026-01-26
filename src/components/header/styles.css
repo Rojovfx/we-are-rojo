@@ -7,9 +7,10 @@
   width: 98%;
   padding: 5px 15px;
   position: fixed;
-  z-index: 4;
+  z-index: calc(var(--zIndexMenuMobile) * 3);
   background: rgba(0, 0, 0, 0.1) !important;
   transition: background-color 0.3s ease;
+  margin-top: 0vh;
 }
 
 .header.scrolled {
@@ -42,6 +43,16 @@
   align-items: center;
 }
 
+.logoMobile {
+  height: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: none !important;
+  display: flex;
+  align-items: center;
+  z-index: calc( var(--zIndexMenuMobile) + 1);
+}
+
 .section {
   cursor: pointer;
   height: 50px;
@@ -70,6 +81,8 @@
 }
 
 .mobile-header {
+  position: relative;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,60 +90,116 @@
   width: 100%;
   padding: 5px 15px;
   top: 0;
-  position: fixed;
   z-index: 10;
-  box-sizing: border-box;
 }
 
 .mobile-menu-button {
   border: none;
   display: flex;
+  z-index: calc( var(--zIndexMenuMobile) + 1);
+  background-color: transparent;
+}
+
+.mmb-lineaSVG{
+  transition: transform 0.3s;
 }
 
 .mobile-menu-container {
   position: absolute;
-  padding: 0.5em;
-  top: 70px;
-  border-bottom-left-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
+  top: -100vh;
+  box-sizing: border-box;
+  padding: 0 0.5em 0;
+  height: 100vh;
   width: 100vw;
   left: 0;
-  z-index: 1;
+  z-index: var(--zIndexMenuMobile);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  transition: top 0.5s;
 }
 
 .mobile-sections {
-  padding: 5px 15px;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 2vh 2vh;
 }
 
-/* Mobile */
-@media (max-width: 700px) {
+.options {
+  font-size: 30px;
+}
+
+.mobMenCon-footer{
+  position: absolute;
+  display: grid;
+  box-sizing: border-box;
+  padding: var(--unidadDeEspacio) var(--unidadDeEspacio) 0;
+  align-items: center;
+  justify-items: center;
+  bottom: 0;
+  margin-bottom: 6vh;
+}
+
+.mobMenCon-footer_social-media{
+  display: flex;
+  align-items: center;
+  min-width: 60%;
+  justify-content: space-between;
+
+}
+
+/* Mobile and Smaller Desktop */
+@media (max-width: 1000px) {
   .header {
     display: flex;
     width: 98%;
     position: fixed;
-    z-index: 3;
+    z-index: calc(var(--zIndexMenuMobile) * 3);
   }
 
   .sections {
     width: 100%;
     justify-content: space-between;
   }
-}
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .header {
-    display: flex;
-    width: 98%;
-    position: fixed;
-    z-index: 3;
+  .section{
+    padding: 0 4px;
   }
 
-  .sections {
-    width: 100%;
-    justify-content: space-between;
+  .mobile-sections:last-of-type {
+    margin-bottom: 4vh;
+  }
+
+  .mobile-header {
+    background-color: transparent;
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .mobile-header.scrolled {
+    background-color: black !important;
+  }
+
+  .mobile-menu-button {
+    justify-self: start;
+    background-color: transparent;
+  }
+
+  .logoMobile {
+    justify-self: end;
+    margin-right: 2px;
+  }
+
+  .logo-imagen{
+    background-color: transparent;
+  } 
+  
+  .iconoHamburguesa{
+    background-color: transparent;
   }
 }
