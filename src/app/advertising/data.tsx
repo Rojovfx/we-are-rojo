@@ -2,6 +2,7 @@ export const projects = [
   {
     titleEn: 'NETFLIX | ABRAZA TODO LO QUE ERES',
     titleEs: 'NETFLIX | ABRAZA TODO LO QUE ERES',
+    title: 'NETFLIX | NORMA',
     href: '/advertising/netflix/norma',
     img: '/netflix-norma.jpg',
   },
@@ -9,6 +10,7 @@ export const projects = [
   {
     titleEn: 'SAMSUNG | TECH GOES GREEN | CONSCIENCE',
     titleEs: 'SAMSUNG | TECH GOES GREEN | CONSCIENCE',
+    title: 'SAMSUNG | TECH GOES GREEN | A CHIP WITH CONSCIENCE',
     href: '/advertising/samsung/chip-with-conscience',
     img: '/samsung-chip.jpg',
   },

@@ -5,9 +5,9 @@ export const english = {
     works: 'WORKS',
   },
   pages: {
-    featuresTitle: 'We create visual effects for feature films',
-    episodicTitle: 'We create visual effects for episodic',
-    advertisingTitle: 'We create visual effects for advertising',
+    featuresTitle: 'Here are some of our latest feature film projects, enjoy!',
+    episodicTitle: 'Here are some of our latest episodic projects, ennjoy!',
+    advertisingTitle: 'Here are some of our latest advertising projects, enjoy!',
     aboutUs: {
       text: 'ROJO Studio is a post-production company with bases in Buenos Aires and Tenerife. We specialize in High-End Visual Effects. From concept art to design and development, color grading and lab services for films and episodics.',
       subtext:

@@ -21,7 +21,7 @@
 }
 
 .about-text > p {
-  margin-bottom: 20px;
+  margin-bottom: var(--margenTextoMobile);
   display: flex;
   flex-direction: column;
 }
@@ -35,56 +35,49 @@
   height: 7em;
 }
 
-/* Mobile */
-@media (max-width: 700px) {
+/* Mobile and Smaller Desktop */
+@media (max-width: 1000px) {
   .about-container {
-    height: 90vh;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    padding: 0;
-    padding-top: 70px;
+    padding: calc(var(--altoHeader) + var(--unidadDeEspacio)) 0 0;
+    overflow: hidden;
   }
 
   .about-text {
-    width: 90%;
-    padding: 20px;
-    padding-bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: var(--margenTextoMobile) var(--margenTextoMobile) 0;
+  }
+
+  .aboutImagen{
+    position: relative;
+    display: block;
+    margin-bottom: var(--margenTextoMobile);
+    width: 100%;
+    height: auto;
   }
 
   .social-text {
     display: flex;
-    margin-bottom: 40px;
+    height: auto;
+    margin: var(--margenTextoMobile) 0 calc(var(--margenTextoMobile) * 2);
     padding: 5px;
-    margin-left: 0;
   }
 
   .social-text > div {
-    margin-bottom: 20px;
+    margin-bottom: var(--margenTextoMobile);
   }
 
   .social-media {
     text-decoration: underline;
-    margin-top: 10px;
-    text-underline-offset: 5px;
-  }
-}
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .about-container {
-    width: 95vw;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .social-media {
-    text-decoration: underline;
-    margin-top: 10px;
     text-underline-offset: 5px;
   }
 }

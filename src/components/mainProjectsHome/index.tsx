@@ -16,16 +16,12 @@ const MainProjectsHome = ({ projects, home, title, subtitle }: any) => {
     <div className="main-projects-container">
       {home ? (
         <div className="home-title">
-          <br></br>
-          <br></br>
           <h1 className="home-subtitle"> {subtitle}</h1>
-          <br></br>
-          <br></br>
         </div>
       ) : (
         <div className="page-info">
           <h1>{title}</h1>
-          <h3> {subtitle}</h3>
+          <h3 className="subtitle"> {subtitle}</h3>
           <h2 className="work">{works}</h2>
         </div>
       )}
@@ -39,7 +35,7 @@ const MainProjectsHome = ({ projects, home, title, subtitle }: any) => {
             key={project.title}
           >
             <div className="project-title">
-              <p>{lang == 'es' ? project.titleEs : project.titleEn}</p>
+              <p className='textoConBorde'>{lang == 'es' ? project.titleEs : project.titleEn}</p>
             </div>
           </Link>
         ))}
