@@ -28,7 +28,7 @@ const Footer = () => {
   
   let listado:any[] = []
   let posicion:number
-  let titulo:String
+  let titulo:any
   let posicionInicialTouch:number
   let posicionFinalTouch:number
 
@@ -60,7 +60,7 @@ const Footer = () => {
   const pathname = usePathname();
   useEffect(() => {
     const clase = document.getElementsByClassName('page-container')
-    const unTitulo = document.getElementsByClassName('title')
+    const unTitulo:any = document.getElementsByClassName('title')
     if(clase.length > 0){
       if(pathname.indexOf('features/') > -1){
         listado = proyectosFeatures
@@ -72,10 +72,14 @@ const Footer = () => {
         listado = proyectosAdversiting
       }      
     }
+
     if(unTitulo.length > 0){
-      titulo = unTitulo[0].textContent
-      posicion = listado.findIndex((e) => e.titleEn == titulo || e.titleEs == titulo || e.title == titulo)
+      if(unTitulo[0].textContent != null){
+        titulo = unTitulo[0].textContent
+        posicion = listado.findIndex((e) => e.titleEn == titulo || e.titleEs == titulo || e.title == titulo)
+      }
     }
+    
     const imagenTouch = document.getElementsByClassName('icono-touch')
     if(listado.length > 0){
       const elemento = clase[0]
