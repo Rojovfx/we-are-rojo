@@ -6,7 +6,7 @@ import { menuSectionsMobile } from './data';
 import Link from 'next/link';
 import LanguageSwitch from './languageSwitch';
 import { LangContext } from '@/app/providers/provider';
-import Rojo from '../images/rojo.svg';
+import Rojo from '../images/isologo-rojo-studio.png';
 import { socialMedia } from '../header/data';
 import { usePathname } from 'next/navigation';
 
@@ -207,7 +207,7 @@ const MobileHeader = () => {
       <LanguageSwitch />
 
       <a href={'/'} className="logo logoMobile">
-        <Image src={Rojo} alt="rojo studio" width={40} height={25} className='logo-imagen'/>
+        <Image src={Rojo} alt="rojo studio" width={26} height={26} className='logo-imagen'/>
       </a>
 
     </>
