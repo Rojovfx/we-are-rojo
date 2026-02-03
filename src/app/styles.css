@@ -7,8 +7,10 @@
 .logo-sobreVideo{
   background-color: transparent;
   position: fixed;
-  top: 10vh;
+  top: 12vh;
   z-index: calc( var(--zIndexVideoHomeMobile) + 1);
+  width: 15%;
+  height: auto;
 }
 
 .home-cajaVacia{
@@ -17,4 +19,16 @@
   width: 100vw;
   height: 100vh;
   background-color: transparent;
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  .logo-sobreVideo{
+    width: 20%;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-sobreVideo{
+    width: 30%;
+  }
 }

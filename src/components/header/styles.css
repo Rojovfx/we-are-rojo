@@ -131,14 +131,14 @@
 }
 
 .mobMenCon-footer{
-  position: absolute;
+  position: relative;
+  margin-top: 0;
   display: grid;
   box-sizing: border-box;
   padding: var(--unidadDeEspacio) var(--unidadDeEspacio) 0;
   align-items: center;
   justify-items: center;
-  bottom: 0;
-  margin-bottom: 6vh;
+
 }
 
 .mobMenCon-footer_social-media{
@@ -147,6 +147,12 @@
   min-width: 60%;
   justify-content: space-between;
 
+}
+
+@media (max-width: 500px) {
+  .mobMenCon-footer{
+    margin-top: calc(var(--unidadDeEspacioVh) * 4);
+  }
 }
 
 /* Mobile and Smaller Desktop */
@@ -165,10 +171,6 @@
 
   .section{
     padding: 0 4px;
-  }
-
-  .mobile-sections:last-of-type {
-    margin-bottom: 4vh;
   }
 
   .mobile-header {
