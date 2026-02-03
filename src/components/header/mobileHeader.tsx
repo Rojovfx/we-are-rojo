@@ -9,6 +9,7 @@ import { LangContext } from '@/app/providers/provider';
 import Rojo from '../images/isologo-rojo-studio.png';
 import { socialMedia } from '../header/data';
 import { usePathname } from 'next/navigation';
+import path from 'path';
 
 const MobileHeader = () => {
   const { lang } = useContext(LangContext);
@@ -139,9 +140,17 @@ const MobileHeader = () => {
   useEffect(() => {
     const headerMobile:any = document.getElementsByClassName('mobile-header')[0]
 
-    if(pathname == '/'){
+    if(pathname == '/' && Math.abs(window.scrollY) < 100){
+      headerMobile.style.position = 'relative'
       headerMobile.style.marginTop = '100vh'
     }else{
+      const aEliminar:any = document.getElementsByClassName('aEliminarHome')
+      if(aEliminar.length > 0){
+        for(const e of aEliminar){
+          e.style.display = 'none';
+        }
+      }
+      headerMobile.style.marginTop = '0vh'
       headerMobile.style.position = 'fixed'
     }
 

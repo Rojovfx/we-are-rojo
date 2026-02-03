@@ -15,7 +15,7 @@ const vimeoPlayer = ({ src, clase, claseIframe}: VimeoPlayerProps) => {
         title="vimeo-player"
         src={src}
         frameBorder="0"
-        allowFullScreen
+        allow="autoplay; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
     </div>
