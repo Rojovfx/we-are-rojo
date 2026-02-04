@@ -90,7 +90,7 @@
   width: 100%;
   padding: 5px 15px;
   top: 0;
-  z-index: 10;
+  z-index: var(--zIndexHeader);
 }
 
 .mobile-menu-button {

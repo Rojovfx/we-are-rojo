@@ -21,6 +21,7 @@ a:-webkit-any-link {
   --colorFondo: black;
   --zIndexVideoHomeMobile: 1;
   --zIndexMenuMobile: 3;
+  --zIndexHeader: 12;
 }
 
 .fondoTransparente{
