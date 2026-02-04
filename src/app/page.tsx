@@ -61,10 +61,12 @@ const Home = () => {
 
     if(menu){
       const top = menu.getBoundingClientRect().top
-      if(top < 50 && top!=0){
+      if(top <= 0){
         menu.style.marginTop = '0vh'
         menu.style.position = 'sticky'
-        contenedor.style.paddingTop = '0px';
+        if(contenedor){
+          contenedor.style.paddingTop = '0px';
+        }
         //window.scrollTo(0, 0)
         eliminarElementosDeFondo()
       }
@@ -96,7 +98,7 @@ const Home = () => {
             />
           </div>
           <VimeoPlayer
-            src={'https://player.vimeo.com/video/910805500?badge=0&autoplay=1&muted=1&loop=1&background=1'}
+            src={'https://player.vimeo.com/video/910805500?badge=0&autoplay=1&muted=1&loop=1&background=1&playsinline=1'}
             clase = {"video-container video-container-home aEliminarHome"}
             claseIframe= {"video video-home"}
           />
@@ -105,7 +107,7 @@ const Home = () => {
       ) : (
         <PageSectionVideo
           src={
-            'https://player.vimeo.com/video/910805500?badge=0&autoplay=1&muted=1&loop=1&background=1'
+            'https://player.vimeo.com/video/910805500?badge=0&autoplay=1&muted=1&loop=1&background=1&playsinline=1'
           }
         />
       )}
