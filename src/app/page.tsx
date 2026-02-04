@@ -37,11 +37,6 @@ const Home = () => {
     };
   }, []);
 
-  window.addEventListener('pageshow', function(event) {
-    if (event.persisted) {
-      window.location.reload(); // Recarga si vino de la caché
-    }
-  });
 
   const scrollToNextSection = () => {
     const menu:any = document.getElementsByClassName('mobile-header')[0]
