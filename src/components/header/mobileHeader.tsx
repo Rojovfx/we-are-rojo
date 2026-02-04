@@ -141,7 +141,7 @@ const MobileHeader = () => {
     const headerMobile:any = document.getElementsByClassName('mobile-header')[0]
 
     if(pathname == '/' && Math.abs(window.scrollY) < 100){
-      headerMobile.style.position = 'relative'
+      headerMobile.style.position = 'sticky'
       headerMobile.style.marginTop = '100vh'
     }else{
       const aEliminar:any = document.getElementsByClassName('aEliminarHome')

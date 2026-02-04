@@ -175,7 +175,7 @@
 
   .mobile-header {
     background-color: transparent;
-    position: fixed;
+    position: sticky;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
