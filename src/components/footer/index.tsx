@@ -8,7 +8,9 @@ import { usePathname } from 'next/navigation';
 import { projects as proyectosAdversiting  } from '../../app/advertising/data'
 import { projects as proyectosEpisodic  } from '../../app/episodic/data'
 import { projects as proyectosFeatures  } from '../../app/features/data'
+import { projects as proyectosHome  } from '../../app/dataHome'
 import { useRouter } from 'next/navigation';
+import path from 'path';
 
 const Footer = () => {
   const router = useRouter();
@@ -61,16 +63,30 @@ const Footer = () => {
   useEffect(() => {
     const clase = document.getElementsByClassName('page-container')
     const unTitulo:any = document.getElementsByClassName('title')
+    const secciones = ['/features', '/reel', '/advertising', '/episodic', '/about']
+
+    if(pathname == '/'){
+      sessionStorage.setItem("vineDeHomeRojo", "si")
+    }
+    if(secciones.includes(pathname)){
+      sessionStorage.setItem("vineDeHomeRojo", "no")
+    }
+
+    let vineDeHome:any = sessionStorage.getItem("vineDeHomeRojo")
     if(clase.length > 0){
-      if(pathname.indexOf('features/') > -1){
-        listado = proyectosFeatures
-      }
-      if(pathname.indexOf('episodic/') > -1){
-        listado = proyectosEpisodic
-      }
-      if(pathname.indexOf('advertising/') > -1){
-        listado = proyectosAdversiting
-      }      
+      if(vineDeHome == "si"){
+        listado = proyectosHome
+      }else{
+        if(pathname.indexOf('features/') > -1){
+          listado = proyectosFeatures
+        }
+        if(pathname.indexOf('episodic/') > -1){
+          listado = proyectosEpisodic
+        }
+        if(pathname.indexOf('advertising/') > -1){
+          listado = proyectosAdversiting
+        } 
+      }     
     }
 
     if(unTitulo.length > 0){
@@ -80,7 +96,7 @@ const Footer = () => {
       }
     }
     
-    const imagenTouch = document.getElementsByClassName('icono-touch')
+    //const imagenTouch = document.getElementsByClassName('icono-touch')
     if(listado.length > 0){
       const elemento = clase[0]
       elemento.addEventListener('touchstart', inicioTouch)
@@ -92,6 +108,7 @@ const Footer = () => {
     }else{
       setIsAbout(false)
     }
+
   }, [usePathname()]); 
 
 

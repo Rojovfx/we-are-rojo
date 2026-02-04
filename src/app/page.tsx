@@ -29,16 +29,23 @@ const Home = () => {
     }
   }, []);
 
-    useEffect(() => {
-      window.addEventListener('scroll', revisarMargenSuperior);
-  
-      return () => {
-        window.removeEventListener('scroll', revisarMargenSuperior);
-      };
-    }, []);
+  useEffect(() => {
+    window.addEventListener('scroll', revisarMargenSuperior);
+
+    return () => {
+      window.removeEventListener('scroll', revisarMargenSuperior);
+    };
+  }, []);
+
+  window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+      window.location.reload(); // Recarga si vino de la caché
+    }
+  });
 
   const scrollToNextSection = () => {
     const menu:any = document.getElementsByClassName('mobile-header')[0]
+    const contenedor:any = document.getElementsByClassName('main-projects-container')[0]
     
     if(menu){
       menu.style.transition = 'margin-top 0.5s'
@@ -46,7 +53,8 @@ const Home = () => {
       eliminarElementosDeFondo()
       setTimeout(
         ()=>{
-          menu.style.position = 'fixed'
+          menu.style.position = 'sticky'
+          contenedor.style.paddingTop = '0px';
         },600
       )
     }
@@ -54,13 +62,15 @@ const Home = () => {
 
   const revisarMargenSuperior = () =>{
     const menu:any = document.getElementsByClassName('mobile-header')[0]
+    const contenedor:any = document.getElementsByClassName('main-projects-container')[0]
 
     if(menu){
       const top = menu.getBoundingClientRect().top
       if(top < 50 && top!=0){
         menu.style.marginTop = '0vh'
-        menu.style.position = 'fixed'
-        window.scrollTo(0, 0)
+        menu.style.position = 'sticky'
+        contenedor.style.paddingTop = '0px';
+        //window.scrollTo(0, 0)
         eliminarElementosDeFondo()
       }
     }
