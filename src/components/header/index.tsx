@@ -17,7 +17,7 @@ const Header = () => {
     const isMobile =
     typeof window !== 'undefined' &&
     window.matchMedia('(max-width: 1000px)').matches;
-      if (isMobile && pathname == '/'){
+      if (isMobile){
         setIsScrolled(true)
       }
   };
