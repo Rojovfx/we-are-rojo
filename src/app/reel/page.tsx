@@ -1,10 +1,27 @@
+'use client';
 import '../pagesStyles.css';
 import VimeoPlayer from '@/components/vimeoPlayer';
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import './styles.css';
 
 const Page = () => {
+  const [isReelMobile, setIsReelMobile] = useState(false);
+
+    const pathname = usePathname();
+    useEffect(() => {
+      const isMobile =
+        typeof window !== 'undefined' &&
+        window.matchMedia('(max-width: 1000px)').matches;
+      if (isMobile && pathname == '/reel'){
+        setIsReelMobile(true)
+      }else{
+        setIsReelMobile(false)
+      }
+    })
+
   return (
-    <div className="page-container">
+    <div className={`page-container ${isReelMobile ? 'page-container-reelMobile' : ''}`}>
       <VimeoPlayer
         src={'https://player.vimeo.com/video/910187264?h=2cd41c1f82'}
       />

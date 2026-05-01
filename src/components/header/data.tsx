@@ -54,7 +54,7 @@ export const menuSectionsMobile = [
     href: '/episodic',
   },
   {
-    titleEn: 'ADVERTISING',
+    titleEn: 'SHORT-FORM',
     titleEs: 'COMERCIALES',
     href: '/advertising',
   },

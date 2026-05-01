@@ -15,6 +15,7 @@ import path from 'path';
 const Footer = () => {
   const router = useRouter();
   const [isAbout, setIsAbout] = useState(false);
+  const [isReelMobile, setIsReelMobile] = useState(false);
   const [deviceMobile, setDeviceMobile] = useState(false);
 
   useEffect(() => {
@@ -89,6 +90,15 @@ const Footer = () => {
       }     
     }
 
+    const isMobile =
+      typeof window !== 'undefined' &&
+      window.matchMedia('(max-width: 1000px)').matches;
+    if (isMobile && pathname == '/reel'){
+      setIsReelMobile(true)
+    }else{
+      setIsReelMobile(false)
+    }
+
     if(unTitulo.length > 0){
       if(unTitulo[0].textContent != null){
         titulo = unTitulo[0].textContent
@@ -113,7 +123,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="footer">
+    <footer className={`footer ${isReelMobile ? 'footer-hidden' : ''}`}>
       <p className="country">
         BUENOS AIRES, ARGENTINA <br className="mobile-break" />{' '}
         <span className="separator"> - </span>TENERIFE, ESPAÑA

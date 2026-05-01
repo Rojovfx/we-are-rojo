@@ -14,6 +14,12 @@ const Header = () => {
   const handleScroll = () => {
     const scrollY = window.scrollY;
     setIsScrolled(scrollY > 100);
+    const isMobile =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(max-width: 1000px)').matches;
+      if (isMobile && pathname == '/'){
+        setIsScrolled(true)
+      }
   };
 
 
@@ -32,6 +38,9 @@ const Header = () => {
 
     if (isMobile) {
       setDeviceMobile(true);
+      if(pathname == '/'){
+        sessionStorage.setItem("vineDeHomeRojo", "si")
+      }
       if(cobertor.current){
         cobertor.current.style.transition = 'opacity 0.8s'
         cobertor.current.style.opacity = '0'
