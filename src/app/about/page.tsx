@@ -10,7 +10,8 @@ const Page = () => {
 
   const i18n = useLanguageSwitcher();
 
-  const { text, subtext } = i18n.pages.aboutUs;
+  //const { text, subtext } = i18n.pages.aboutUs;
+  const { text} = i18n.pages.aboutUs;
   const { contact } = i18n.commonWording;
 
   useEffect(() => {
@@ -29,7 +30,7 @@ const Page = () => {
         <div className="about-text">
           <p>
             {text}
-            <span className="span">{subtext}</span>
+            {/*<span className="span">{subtext}</span>*/}
           </p>
 
           <div className="social-text">
