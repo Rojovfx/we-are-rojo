@@ -9,6 +9,7 @@ import './styles.css';
 import Image from 'next/image';
 import BottomArrow from '../components/images/down-arrow.svg';
 import Rojo from '../components/images/rojo.svg';
+import { isMobile, ubicacion } from '../../utilidades/globales.js';
 
 const Home = () => {
   const [deviceMobile, setDeviceMobile] = useState(false);
@@ -20,11 +21,7 @@ const Home = () => {
 
 
   useEffect(() => {
-    const isMobile =
-      typeof window !== 'undefined' &&
-      window.matchMedia('(max-width: 1000px)').matches;
-
-    if (isMobile) {
+    if (isMobile()) {
       setDeviceMobile(true);
     }
   }, []);
@@ -64,7 +61,7 @@ const Home = () => {
       if(top <= 0){
         menu.style.marginTop = '0vh'
         menu.style.position = 'sticky'
-        if(contenedor){
+        if(contenedor && (ubicacion() == '/')){
           contenedor.style.paddingTop = '0px';
         }
         //window.scrollTo(0, 0)

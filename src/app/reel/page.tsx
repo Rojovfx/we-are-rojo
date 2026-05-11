@@ -4,16 +4,14 @@ import VimeoPlayer from '@/components/vimeoPlayer';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import './styles.css';
+import { isMobile } from '../../../utilidades/globales.js';
 
 const Page = () => {
   const [isReelMobile, setIsReelMobile] = useState(false);
 
     const pathname = usePathname();
     useEffect(() => {
-      const isMobile =
-        typeof window !== 'undefined' &&
-        window.matchMedia('(max-width: 1000px)').matches;
-      if (isMobile && pathname == '/reel'){
+      if (isMobile() && pathname == '/reel'){
         setIsReelMobile(true)
       }else{
         setIsReelMobile(false)

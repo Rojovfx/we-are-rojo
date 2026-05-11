@@ -1,4 +1,5 @@
 'use client';
+import { isMobile } from '../../../utilidades/globales.js';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { useLangHook } from '../hooks/setLangHook';
@@ -15,11 +16,7 @@ const Page = () => {
   const { contact } = i18n.commonWording;
 
   useEffect(() => {
-    const isMobile =
-      typeof window !== 'undefined' &&
-      window.matchMedia('(max-width: 1000px)').matches;
-
-    if (isMobile) {
+    if (isMobile()) {
       setDeviceMobile(true);
     }
   }, []);

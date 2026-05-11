@@ -11,6 +11,7 @@ import { projects as proyectosFeatures  } from '../../app/features/data'
 import { projects as proyectosHome  } from '../../app/dataHome'
 import { useRouter } from 'next/navigation';
 import path from 'path';
+import { isMobile } from '../../../utilidades/globales.js';
 
 const Footer = () => {
   const router = useRouter();
@@ -19,11 +20,7 @@ const Footer = () => {
   const [deviceMobile, setDeviceMobile] = useState(false);
 
   useEffect(() => {
-    const isMobile =
-      typeof window !== 'undefined' &&
-      window.matchMedia('(max-width: 1000px)').matches;
-
-    if (isMobile) {
+    if (isMobile()) {
       setDeviceMobile(true);
     }
   }, []);

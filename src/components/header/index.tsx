@@ -4,6 +4,7 @@ import DesktopHeader from './desktopHeader';
 import MobileHeader from './mobileHeader';
 import { useEffect, useState, useRef, useLayoutEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { isMobile } from '../../../utilidades/globales.js';
 
 const Header = () => {
   const [deviceMobile, setDeviceMobile] = useState(false);
@@ -14,10 +15,8 @@ const Header = () => {
   const handleScroll = () => {
     const scrollY = window.scrollY;
     setIsScrolled(scrollY > 100);
-    const isMobile =
-    typeof window !== 'undefined' &&
-    window.matchMedia('(max-width: 1000px)').matches;
-      if (isMobile){
+
+      if (isMobile()){
         setIsScrolled(true)
       }
   };
