@@ -16,7 +16,7 @@ const Page = () => {
       }else{
         setIsReelMobile(false)
       }
-    })
+    }, [pathname])
 
   return (
     <div className={`page-container ${isReelMobile ? 'page-container-reelMobile' : ''}`}>

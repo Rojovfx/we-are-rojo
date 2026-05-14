@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState} from 'react';
 import MainProjectsHome from '@/components/mainProjectsHome';
 import VimeoPlayer from '@/components/vimeoPlayer';
 import PageSectionVideo from '@/components/pageSectionVideo';
@@ -10,6 +10,7 @@ import Image from 'next/image';
 import BottomArrow from '../components/images/down-arrow.svg';
 import Rojo from '../components/images/rojo.svg';
 import { isMobile, ubicacion } from '../../utilidades/globales.js';
+
 
 const Home = () => {
   const [deviceMobile, setDeviceMobile] = useState(false);
@@ -26,7 +27,26 @@ const Home = () => {
     }
   }, []);
 
+
   useEffect(() => {
+    const revisarMargenSuperior = () =>{
+      const menu:any = document.getElementsByClassName('mobile-header')[0]
+      const contenedor:any = document.getElementsByClassName('main-projects-container')[0]
+
+      if(menu){
+        const top = menu.getBoundingClientRect().top
+        if(top <= 0){
+          menu.style.marginTop = '0vh'
+          menu.style.position = 'sticky'
+          if(contenedor && (ubicacion() == '/')){
+            contenedor.style.paddingTop = '0px';
+          }
+          //window.scrollTo(0, 0)
+          eliminarElementosDeFondo()
+        }
+      }
+    }
+
     window.addEventListener('scroll', revisarMargenSuperior);
 
     return () => {
@@ -52,24 +72,6 @@ const Home = () => {
     }
   };
 
-  const revisarMargenSuperior = () =>{
-    const menu:any = document.getElementsByClassName('mobile-header')[0]
-    const contenedor:any = document.getElementsByClassName('main-projects-container')[0]
-
-    if(menu){
-      const top = menu.getBoundingClientRect().top
-      if(top <= 0){
-        menu.style.marginTop = '0vh'
-        menu.style.position = 'sticky'
-        if(contenedor && (ubicacion() == '/')){
-          contenedor.style.paddingTop = '0px';
-        }
-        //window.scrollTo(0, 0)
-        eliminarElementosDeFondo()
-      }
-    }
-  }
-
   const eliminarElementosDeFondo = () =>{
     const aEliminar:any = document.getElementsByClassName('aEliminarHome')
       for(const e of aEliminar){
@@ -77,10 +79,25 @@ const Home = () => {
       }
   }
 
+  useEffect(() => {
+      setTimeout(
+        ()=>{
+          if(document.querySelector('.placaFullPantalla')){
+            const placa = document.querySelector('.placaFullPantalla') as HTMLElement
+            placa.style.opacity = '0'    
+            setTimeout(
+              ()=>{placa.remove()},1000
+            ) 
+          }
+        },2500
+      )
+  }, []);
+
   return (
     <div className="home-content">
       {deviceMobile ? (
         <>
+          <div className="placaFullPantalla"></div>
           <Image src={Rojo} alt="rojo studio" width={80} height={50} className='logo-sobreVideo aEliminarHome'/>
           <div className="arrow arrowHome aEliminarHome">
             <p className='localidadHomeMobile textoConBorde'>BUENOS AIRES</p>

@@ -21,6 +21,17 @@
   background-color: transparent;
 }
 
+.placaFullPantalla{
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 20;
+  top: 0;
+  transition: all 0.5s;
+}
+
 @media (min-width: 500px) and (max-width: 700px) {
   .logo-sobreVideo{
     width: 20%;

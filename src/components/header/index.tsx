@@ -30,12 +30,9 @@ const Header = () => {
     };
   }, []);
 
+  const pathname = usePathname();
   useEffect(() => {
-    const isMobile =
-      typeof window !== 'undefined' &&
-      window.matchMedia('(max-width: 1000px)').matches;
-
-    if (isMobile) {
+    if (isMobile()) {
       setDeviceMobile(true);
       if(pathname == '/'){
         sessionStorage.setItem("vineDeHomeRojo", "si")
@@ -44,18 +41,13 @@ const Header = () => {
         cobertor.current.style.transition = 'opacity 0.8s'
         cobertor.current.style.opacity = '0'
         setTimeout(
-          ()=>{cobertor.current.remove()},1200
+          ()=>{cobertor.current.remove()},2000
         )
       }
     }else{
       cobertor.current.remove()
     }
-  }, []);
-
-  const pathname = usePathname();
-  useEffect(() => {
-
-  }, [usePathname()]); 
+  }, [pathname]);
 
   return (
     <>
