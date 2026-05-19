@@ -9,16 +9,20 @@ export const english = {
     episodicTitle: 'Here are some of our latest episodic projects, ennjoy!',
     advertisingTitle: 'Here are some of our latest advertising projects, enjoy!',
     aboutUs: {
-      text: 'ROJO Studio is a post-production company with bases in Buenos Aires and Tenerife. We specialize in High-End Visual Effects. From concept art to design and development, color grading and lab services for films and episodics.',
-      subtext:
-        'We are growing constantly, looking for new challenges and projects to take on.',
+      text: 'High-end visual effects studio for episodics and feature films. Built on a robust \
+      pipeline and a senior team with over 20 years of experience, ROJO Studio is equipped to take \
+      on large-scale projects for international productions, delivering complex sequences with \
+      precision and creative rigor. Based in the Canary Islands, Spain. Working with productions \
+      across Europe, Latin America and the US.',
+      //subtext:
+        //'We are growing constantly, looking for new challenges and projects to take on.',
     },
   },
   navbar: {
     reel: 'REEL',
     features: 'FEATURES',
     episodic: 'EPISODIC',
-    advertising: 'ADVERTISING',
+    advertising: 'SHORT-FORM',
     about: 'ABOUT',
   },
   commonWording: {

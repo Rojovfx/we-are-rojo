@@ -64,9 +64,8 @@
   background-color: transparent;
   top: 93%;
   left: 50%;
-  width: 100%;
+  width: calc(100% - (var(--unidadDeEspacio)*8));
   transform: translate(-50%, -50%);
-  margin-left: 20px;
   z-index: 2;
 }
 

@@ -9,9 +9,14 @@ export const spanish = {
     episodicTitle: '¡Acá pueden ver los últimos trabajos que hicimos para series!',
     advertisingTitle: '¡Acá pueden ver los últimos trabajos que hicimos para publicidad!',
     aboutUs: {
-      text: 'ROJO Studio es un estudio de postproducción localizado en Buenos Aires y Tenerife. Nos especializamos en efectos visuales para largometrajes y series.',
-      subtext:
-        'Estamos en constante crecimiento, en búsqueda de nuevos desafíos y proyectos.',
+      text: 'Estudio de efectos visuales de alta gama para series y largometrajes. \
+      Con una infraestructura técnica sólida y un equipo senior de más de 20 años de experiencia, \
+      ROJO Studio está preparado para asumir proyectos de gran escala para producciones \
+      internacionales, entregando secuencias complejas con precisión y rigor creativo. \
+      Con base en las Islas Canarias, España. Trabajando con producciones de Europa, \
+      Latinoamérica y Estados Unidos.',
+      //subtext:
+        //'Estamos en constante crecimiento, en búsqueda de nuevos desafíos y proyectos.',
     },
   },
   navbar: {

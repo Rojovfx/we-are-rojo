@@ -1,4 +1,5 @@
 'use client';
+import { isMobile } from '../../../utilidades/globales.js';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { useLangHook } from '../hooks/setLangHook';
@@ -10,15 +11,12 @@ const Page = () => {
 
   const i18n = useLanguageSwitcher();
 
-  const { text, subtext } = i18n.pages.aboutUs;
+  //const { text, subtext } = i18n.pages.aboutUs;
+  const { text} = i18n.pages.aboutUs;
   const { contact } = i18n.commonWording;
 
   useEffect(() => {
-    const isMobile =
-      typeof window !== 'undefined' &&
-      window.matchMedia('(max-width: 1000px)').matches;
-
-    if (isMobile) {
+    if (isMobile()) {
       setDeviceMobile(true);
     }
   }, []);
@@ -29,7 +27,7 @@ const Page = () => {
         <div className="about-text">
           <p>
             {text}
-            <span className="span">{subtext}</span>
+            {/*<span className="span">{subtext}</span>*/}
           </p>
 
           <div className="social-text">

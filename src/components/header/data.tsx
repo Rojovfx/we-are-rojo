@@ -19,30 +19,35 @@ export const menuSections = [
     titleEn: 'REEL',
     titleEs: 'REEL',
     href: '/reel',
+    inMobile: false
   },
   {
     titleEn: 'FEATURES',
     titleEs: 'LARGOMETRAJES',
     href: '/features',
+    inMobile: true
   },
   {
     titleEn: 'EPISODIC',
     titleEs: 'SERIES',
     href: '/episodic',
+    inMobile: true
   },
   {
-    titleEn: 'ADVERTISING',
+    titleEn: 'SHORT-FORM',
     titleEs: 'COMERCIALES',
     href: '/advertising',
+    inMobile: true
   },
   {
     titleEn: 'ABOUT',
     titleEs: 'NOSOTROS',
     href: '/about',
+    inMobile: true
   },
 ];
 
-export const menuSectionsMobile = [
+/*export const menuSectionsMobile = [
   {
     titleEn: 'FEATURES',
     titleEs: 'LARGOMETRAJES',
@@ -54,7 +59,7 @@ export const menuSectionsMobile = [
     href: '/episodic',
   },
   {
-    titleEn: 'ADVERTISING',
+    titleEn: 'SHORT-FORM',
     titleEs: 'COMERCIALES',
     href: '/advertising',
   },
@@ -63,4 +68,4 @@ export const menuSectionsMobile = [
     titleEs: 'NOSOTROS',
     href: '/about',
   },
-];
+];*/

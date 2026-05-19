@@ -38,7 +38,6 @@ const PageSectionVideo = ({ src }: PageSectionVideoProps) => {
         <div className="video-section-container">
           <iframe
             className="video-section"
-            loading="lazy"
             src={src}
             width="2560"
             height="1440"

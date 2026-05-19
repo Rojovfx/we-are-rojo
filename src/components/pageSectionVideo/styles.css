@@ -71,6 +71,7 @@
   }
 
   .arrowHome{
+    cursor: default;
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,6 +87,7 @@
   }
 
   .arrowHome-img {
+    cursor: pointer;
     grid-column-start: 1;
     grid-column-end: 3;
   }

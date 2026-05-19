@@ -1,15 +1,13 @@
 'use client';
 import { useContext, useEffect, useRef, useState } from 'react';
-import MobileMenu from '../images/mobile-menu.svg';
 import Image from 'next/image';
-import { menuSectionsMobile } from './data';
+import { menuSections } from './data';
 import Link from 'next/link';
 import LanguageSwitch from './languageSwitch';
 import { LangContext } from '@/app/providers/provider';
 import Rojo from '../images/isologo-rojo-studio.png';
 import { socialMedia } from '../header/data';
 import { usePathname } from 'next/navigation';
-import path from 'path';
 
 const MobileHeader = () => {
   const { lang } = useContext(LangContext);
@@ -159,7 +157,7 @@ const MobileHeader = () => {
         ()=>{handleButtonClick()},500
       )
     }
-  }, [usePathname()]); 
+  }, [pathname]); 
 
   return (
     <>
@@ -174,12 +172,7 @@ const MobileHeader = () => {
       </button>
       {isOpen && (
         <div className="mobile-menu-container" ref={mobileMenuRef}>
-          <Link href={'/reel'} className="mobile-sections">
-            <p className="options">
-              REEL
-            </p>
-          </Link>
-          {menuSectionsMobile.map((section, index) => (
+          {menuSections.map((section, index) => (
             <Link
               href={section.href}
               key={lang == 'es' ? section.titleEs : section.titleEn}
