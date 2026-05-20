@@ -23,7 +23,7 @@ export const spanish = {
     reel: 'REEL',
     features: 'LARGOMETRAJES',
     episodic: 'SERIES',
-    advertising: 'COMERCIALES',
+    advertising: 'PIEZAS CORTAS',
     about: 'NOSOTROS',
   },
   commonWording: {

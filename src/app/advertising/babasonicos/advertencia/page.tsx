@@ -40,10 +40,10 @@ const Page = () => {
               <span>Producer:</span> Nicolás Abelovich
             </p>
             <p className="text">
-              <span>DOP:</span>  Leandro Filloy
+              <span>DOP:</span> Leandro Filloy
             </p>
             <p className="text">
-              <span>Post Sup:</span>  Julieta Fernández Castagnino
+              <span>Post Sup:</span> Julieta Fernández Castagnino
             </p>
           </div>
         </div>

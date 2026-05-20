@@ -12,7 +12,7 @@ const Page = () => {
   return (
     <div className="page-container">
       <VimeoPlayer
-        src={'https://player.vimeo.com/video/'}
+        src={'https://player.vimeo.com/video/1193638230'}
       />
 
       <div className="info-container">
@@ -40,10 +40,10 @@ const Page = () => {
               <span>Producer:</span> Nicolás Abelovich
             </p>
             <p className="text">
-              <span>DOP:</span>  Javier Juliá
+              <span>DOP:</span> Javier Juliá
             </p>
             <p className="text">
-              <span>Post Sup:</span>  Julieta Fernández Castagnino
+              <span>Post Sup:</span> Julieta Fernández Castagnino
             </p>
           </div>
         </div>
