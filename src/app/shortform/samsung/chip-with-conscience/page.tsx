@@ -7,41 +7,42 @@ import '../../../pagesStyles.css';
 const Page = () => {
   const { useLanguageSwitcher } = useLangHook();
   const i18n = useLanguageSwitcher();
-  const { productionCompany, creativeDirector } = i18n.commonWording;
+  const { productionCompany, producer, DOP } = i18n.commonWording;
 
   return (
     <div className="page-container">
       <VimeoPlayer
-        src={'https://player.vimeo.com/video/891929656?h=2badc595f5'}
+        src={'https://player.vimeo.com/video/880994303?h=6ff0018958'}
       />
       <div className="info-container">
-        <h1 className="title">SWAROVSKY | METAMORPHOSIS</h1>
+        <h1 className="title">
+          SAMSUNG | TECH GOES GREEN | A CHIP WITH CONSCIENCE
+        </h1>
         <div className="credits">
           <div className="vfx-credits">
             <div className="column-left">
               <p className="text">
                 <span>VFX Sup:</span> Jonathan Monroig{' '}
               </p>
-              <p className="text">
-                <span>VFX Prod:</span> Ariadna Ortiz{' '}
-              </p>
             </div>
           </div>
 
           <div>
             <p className="text">
-              <span>{productionCompany}:</span> Motion Principles & Day
-              International
+              <span>{productionCompany}:</span> Can Can Club - 1stAveMachine
             </p>
             <p className="text">
-              <span>{creativeDirector}:</span> Manuel Boim
+              <span>Director:</span> Becho & Mab
             </p>
             <p className="text">
-              <span>Studio Director:</span> Guido Bertoni
+              <span>{producer}:</span> Mechi Serrano
+            </p>
+            <p className="text">
+              <span>{DOP}:</span> Lautaro Isern
             </p>
           </div>
         </div>
-        <BackArrow href={'/advertising'} />
+        <BackArrow href={'/shortform'} />
       </div>
     </div>
   );
