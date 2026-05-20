@@ -1,9 +1,9 @@
 export const projects = [
   {
-    titleEn: 'JUANA ROZAS & SIX SEX | I\'M A START',
-    titleEs: 'JUANA ROZAS & SIX SEX | I\'M A START',
-    title: 'JUANA ROZAS & SIX SEX | I\'M A START',
-    href: '/advertising/juana-rozas-and-six-sex/im-a-start',
+    titleEn: 'JUANA ROZAS & SIX SEX | I\'M A STAR',
+    titleEs: 'JUANA ROZAS & SIX SEX | I\'M A STAR',
+    title: 'JUANA ROZAS & SIX SEX | I\'M A STAR',
+    href: '/advertising/juana-rozas-and-six-sex/im-a-star',
     img: '/star_web.jpeg',
   },
   {
@@ -21,9 +21,9 @@ export const projects = [
     img: '/tajada_web.jpeg',
   },
   {
-    titleEn: 'ESCENA FINAL | TRAILER',
-    titleEs: 'ESCENA FINAL | TRAILER',
-    title: 'ESCENA FINAL | TRAILER',
+    titleEn: 'ESCENA FINAL',
+    titleEs: 'ESCENA FINAL',
+    title: 'ESCENA FINAL',
     href: '/advertising/escena-final/trailer',
     img: '/efinal_web.jpeg',
   },

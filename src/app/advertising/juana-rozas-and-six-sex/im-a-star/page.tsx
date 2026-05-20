@@ -16,7 +16,7 @@ const Page = () => {
       />
 
       <div className="info-container">
-        <h1 className="title">{"JUANA ROZAS & SIX SEX | I'M A START"}</h1>
+        <h1 className="title">{"JUANA ROZAS & SIX SEX | I'M A STAR"}</h1>
         <div className="credits">
           <div className="vfx-credits">
             <div className="column-left">

@@ -7,7 +7,7 @@ export const spanish = {
   pages: {
     featuresTitle: '¡Acá pueden ver los últimos trabajos que hicimos para largometrajes!',
     episodicTitle: '¡Acá pueden ver los últimos trabajos que hicimos para series!',
-    advertisingTitle: '¡Acá pueden ver los últimos trabajos que hicimos para publicidad!',
+    advertisingTitle: '¡Acá pueden ver los últimos trabajos que hicimos en formato corto!',
     aboutUs: {
       text: 'Estudio de efectos visuales de alta gama para series y largometrajes. \
       Con una infraestructura técnica sólida y un equipo senior de más de 20 años de experiencia, \
