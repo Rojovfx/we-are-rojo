@@ -35,7 +35,7 @@ export const menuSections = [
   },
   {
     titleEn: 'SHORT-FORM',
-    titleEs: 'COMERCIALES',
+    titleEs: 'PIEZAS CORTAS',
     href: '/advertising',
     inMobile: true
   },
@@ -60,7 +60,7 @@ export const menuSections = [
   },
   {
     titleEn: 'SHORT-FORM',
-    titleEs: 'COMERCIALES',
+    titleEs: 'PIEZAS CORTAS',
     href: '/advertising',
   },
   {

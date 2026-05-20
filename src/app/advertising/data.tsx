@@ -1,32 +1,32 @@
 export const projects = [
-  /*{
-    titleEn: 'ESCENA FINAL | TRAILER',
-    titleEs: 'ESCENA FINAL | TRAILER',
-    title: 'ESCENA FINAL | TRAILER',
-    href: '/advertising/escena-final/trailer',
-    img: '/netflix-norma.jpg',
-  },
   {
-    titleEn: 'BABASÓNICOS | TAJADA',
-    titleEs: 'BABASÓNICOS | TAJADA',
-    title: 'BABASÓNICOS | TAJADA',
-    href: '/advertising/babasonicos/tajada',
-    img: '/netflix-norma.jpg',
+    titleEn: 'JUANA ROZAS & SIX SEX | I\'M A START',
+    titleEs: 'JUANA ROZAS & SIX SEX | I\'M A START',
+    title: 'JUANA ROZAS & SIX SEX | I\'M A START',
+    href: '/advertising/juana-rozas-and-six-sex/im-a-start',
+    img: '/star_web.jpeg',
   },
   {
     titleEn: 'BABASÓNICOS | ADVERTENCIA',
     titleEs: 'BABASÓNICOS | ADVERTENCIA',
     title: 'BABASÓNICOS | ADVERTENCIA',
     href: '/advertising/babasonicos/advertencia',
-    img: '/netflix-norma.jpg',
+    img: '/adv_web.jpeg',
   },
   {
-    titleEn: 'JUANA ROZAS & SIX SEX | I\'M A START',
-    titleEs: 'JUANA ROZAS & SIX SEX | I\'M A START',
-    title: 'JUANA ROZAS & SIX SEX | I\'M A START',
-    href: '/advertising/juana-rozas-and-six-sex/im-a-start',
-    img: '/netflix-norma.jpg',
-  },*/
+    titleEn: 'BABASÓNICOS | TAJADA',
+    titleEs: 'BABASÓNICOS | TAJADA',
+    title: 'BABASÓNICOS | TAJADA',
+    href: '/advertising/babasonicos/tajada',
+    img: '/tajada_web.jpeg',
+  },
+  {
+    titleEn: 'ESCENA FINAL | TRAILER',
+    titleEs: 'ESCENA FINAL | TRAILER',
+    title: 'ESCENA FINAL | TRAILER',
+    href: '/advertising/escena-final/trailer',
+    img: '/efinal_web.jpeg',
+  },
   {
     titleEn: 'NETFLIX | ABRAZA TODO LO QUE ERES',
     titleEs: 'NETFLIX | ABRAZA TODO LO QUE ERES',
@@ -34,7 +34,6 @@ export const projects = [
     href: '/advertising/netflix/norma',
     img: '/netflix-norma.jpg',
   },
-
   {
     titleEn: 'SAMSUNG | TECH GOES GREEN | CONSCIENCE',
     titleEs: 'SAMSUNG | TECH GOES GREEN | CONSCIENCE',
