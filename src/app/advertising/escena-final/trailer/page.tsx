@@ -16,7 +16,7 @@ const Page = () => {
       />
 
       <div className="info-container">
-        <h1 className="title">ESCENA FINAL | TRAILER</h1>
+        <h1 className="title">ESCENA FINAL</h1>
         <div className="credits">
           <div className="vfx-credits">
             <div className="column-left">

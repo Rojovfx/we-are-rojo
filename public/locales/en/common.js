@@ -6,8 +6,8 @@ export const english = {
   },
   pages: {
     featuresTitle: 'Here are some of our latest feature film projects, enjoy!',
-    episodicTitle: 'Here are some of our latest episodic projects, ennjoy!',
-    advertisingTitle: 'Here are some of our latest advertising projects, enjoy!',
+    episodicTitle: 'Here are some of our latest episodic projects, enjoy!',
+    advertisingTitle: 'Here are some of our latest short-form projects, enjoy!',
     aboutUs: {
       text: 'High-end visual effects studio for episodics and feature films. Built on a robust \
       pipeline and a senior team with over 20 years of experience, ROJO Studio is equipped to take \
