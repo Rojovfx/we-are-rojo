@@ -7,46 +7,41 @@ import '../../../pagesStyles.css';
 const Page = () => {
   const { useLanguageSwitcher } = useLangHook();
   const i18n = useLanguageSwitcher();
-  const { productionCompany, producer, DOP } = i18n.commonWording;
+  const { productionCompany } = i18n.commonWording;
 
   return (
     <div className="page-container">
       <VimeoPlayer
-        src={'https://player.vimeo.com/video/901189414?h=8ead0a1fef'}
+        src={'https://player.vimeo.com/video/1087103918'}
       />
+
       <div className="info-container">
-        <h1 className="title">NETFLIX | NORMA</h1>
+        <h1 className="title">ESCENA FINAL</h1>
         <div className="credits">
           <div className="vfx-credits">
             <div className="column-left">
               <p className="text">
-                <span>VFX Sup:</span> Jonathan Monroig{' '}
+                <span>VFX Sup:</span> Diego Dzisiuk{' '}
               </p>
               <p className="text">
-                <span>VFX Prod:</span> Ariadna Ortiz{' '}
+                <span>VFX Prod:</span> Jonathan Monroig{' '}
               </p>
             </div>
           </div>
 
           <div>
             <p className="text">
-              <span>{productionCompany}:</span> Labhouse
+              <span>{productionCompany}:</span> Blurr Stories
             </p>
             <p className="text">
-              <span>Director:</span> Juan Cabral
+              <span>Director:</span> Diego Kompel
             </p>
             <p className="text">
-              <span>{producer}:</span> Nicolás Abelovich
-            </p>
-            <p className="text">
-              <span>{DOP}:</span> Javier Juliá
-            </p>
-            <p className="text">
-              <span>Post Sup:</span> Julieta Fernández Castagnino
+              <span>Producer:</span> Fernanda Perez
             </p>
           </div>
         </div>
-        <BackArrow href={'/advertising'} />
+        <BackArrow href={'/shortform'} />
       </div>
     </div>
   );

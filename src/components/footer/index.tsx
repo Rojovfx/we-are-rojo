@@ -5,7 +5,7 @@ import { socialMedia } from '../header/data';
 import iconoTouch from '../../../public/iconoTouch.png';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { projects as proyectosAdversiting  } from '../../app/advertising/data'
+import { projects as proyectosAdversiting  } from '../../app/shortform/data'
 import { projects as proyectosEpisodic  } from '../../app/episodic/data'
 import { projects as proyectosFeatures  } from '../../app/features/data'
 import { projects as proyectosHome  } from '../../app/dataHome'
@@ -61,7 +61,7 @@ const Footer = () => {
   useEffect(() => {
     const clase = document.getElementsByClassName('page-container')
     const unTitulo:any = document.getElementsByClassName('title')
-    const secciones = ['/features', '/reel', '/advertising', '/episodic', '/about']
+    const secciones = ['/features', '/reel', '/shortform', '/episodic', '/about']
 
     if(pathname == '/'){
       sessionStorage.setItem("vineDeHomeRojo", "si")

@@ -7,16 +7,14 @@ import '../../../pagesStyles.css';
 const Page = () => {
   const { useLanguageSwitcher } = useLangHook();
   const i18n = useLanguageSwitcher();
-  const { productionCompany } = i18n.commonWording;
-
+  const { productionCompany, DOP } = i18n.commonWording;
   return (
     <div className="page-container">
       <VimeoPlayer
-        src={'https://player.vimeo.com/video/882112436?h=76bba80866'}
+        src={'https://player.vimeo.com/video/882109093?h=fd77ef6d6f'}
       />
-
       <div className="info-container">
-        <h1 className="title">BURGER KING | CONFUSING TIMES</h1>
+        <h1 className="title">CORONA | SUNBREW</h1>
         <div className="credits">
           <div className="vfx-credits">
             <div className="column-left">
@@ -36,9 +34,12 @@ const Page = () => {
             <p className="text">
               <span>Director:</span> Juan Cabral
             </p>
+            <p className="text">
+              <span>{DOP}:</span> Leandro Filloy
+            </p>
           </div>
         </div>
-        <BackArrow href={'/advertising'} />
+        <BackArrow href={'/shortform'} />
       </div>
     </div>
   );

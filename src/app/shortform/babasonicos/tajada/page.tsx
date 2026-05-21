@@ -12,11 +12,11 @@ const Page = () => {
   return (
     <div className="page-container">
       <VimeoPlayer
-        src={'https://player.vimeo.com/video/1125953284'}
+        src={'https://player.vimeo.com/video/1193638230'}
       />
 
       <div className="info-container">
-        <h1 className="title">BABASÓNICOS | ADVERTENCIA</h1>
+        <h1 className="title">BABASÓNICOS | TAJADA</h1>
         <div className="credits">
           <div className="vfx-credits">
             <div className="column-left">
@@ -24,7 +24,7 @@ const Page = () => {
                 <span>VFX Sup:</span> Jonathan Monroig{' '}
               </p>
               <p className="text">
-                <span>VFX Prod:</span> Jorge Benjardino{' '}
+                <span>VFX Prod:</span> Ariadna Ortiz{' '}
               </p>
             </div>
           </div>
@@ -40,14 +40,14 @@ const Page = () => {
               <span>Producer:</span> Nicolás Abelovich
             </p>
             <p className="text">
-              <span>DOP:</span> Leandro Filloy
+              <span>DOP:</span> Javier Juliá
             </p>
             <p className="text">
               <span>Post Sup:</span> Julieta Fernández Castagnino
             </p>
           </div>
         </div>
-        <BackArrow href={'/advertising'} />
+        <BackArrow href={'/shortform'} />
       </div>
     </div>
   );
