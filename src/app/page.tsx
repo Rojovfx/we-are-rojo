@@ -97,11 +97,10 @@ const Home = () => {
   useEffect(() => {
 
     const opacidadDeElementos = () =>{
-      const menu:any = document.getElementsByClassName('mobile-header')[0]
-      const currentScrollY = menu.getBoundingClientRect().top;
-      const porcentaje = currentScrollY / altoPantalla()
-
       if(isMobile()){
+        const menu:any = document.getElementsByClassName('mobile-header')[0]
+        const currentScrollY = menu.getBoundingClientRect().top;
+        const porcentaje = currentScrollY / altoPantalla()
         const elementosFondo:any = document.getElementsByClassName('aEliminarHome')
         const contenedor:any = document.getElementsByClassName('main-projects-container')[0]
 
