@@ -49,7 +49,7 @@ span {
 /* Mobile and Smaller Desktop */
 @media (max-width: 1000px) {
   .page-container {
-    padding-bottom: 20px;
+    padding-bottom: calc(var(--unidadDeEspacio) * 4);
   }
 
   .title {

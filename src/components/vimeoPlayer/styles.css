@@ -45,3 +45,27 @@
     height: 100%;
   }
 }
+
+/*REEL*/
+.videoFullPantallaRotado {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-top: var(--altoHeader);
+}
+
+@media (orientation: portrait) {
+  .videoFullPantallaRotado {
+    width: calc(100vh - var(--altoHeader));
+    height: 100vw;
+    transform: rotate(90deg);
+  }
+}
+
+@media (orientation: landscape) {
+  .videoFullPantallaRotado {
+    width: 100vw;
+    height: calc(100vh - var(--altoHeader));
+    transform: rotate(0);
+  }
+}

@@ -5,3 +5,7 @@ export const isMobile = () => {
 export const ubicacion = () =>{
   return window.location.pathname;
 }
+
+export const altoPantalla = () => {
+  return window.innerHeight
+}

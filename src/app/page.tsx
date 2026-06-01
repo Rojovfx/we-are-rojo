@@ -9,7 +9,7 @@ import './styles.css';
 import Image from 'next/image';
 import BottomArrow from '../components/images/down-arrow.svg';
 import Rojo from '../components/images/rojo.svg';
-import { isMobile, ubicacion } from '../../utilidades/globales.js';
+import { isMobile, ubicacion, altoPantalla } from '../../utilidades/globales.js';
 
 
 const Home = () => {
@@ -89,8 +89,44 @@ const Home = () => {
               ()=>{placa.remove()},1000
             ) 
           }
-        },3000
+        },3500
       )
+  }, []);
+
+
+  useEffect(() => {
+
+    const opacidadDeElementos = () =>{
+      const menu:any = document.getElementsByClassName('mobile-header')[0]
+      const currentScrollY = menu.getBoundingClientRect().top;
+      const porcentaje = currentScrollY / altoPantalla()
+
+      if(isMobile()){
+        const elementosFondo:any = document.getElementsByClassName('aEliminarHome')
+        const contenedor:any = document.getElementsByClassName('main-projects-container')[0]
+
+        for(let e of elementosFondo){
+          console.log(porcentaje)
+          if (porcentaje > 0.8){
+            e.style.opacity = porcentaje
+          }else if(porcentaje > 0.65){
+            e.style.opacity = porcentaje*0.40
+          }else if(porcentaje > 0.3){
+            e.style.opacity = porcentaje*0.15
+          }else{
+            e.style.opacity = porcentaje*0
+          }
+        }
+        menu.style.opacity = 1 - porcentaje
+        contenedor.style.opacity = 1 - porcentaje
+      }
+    }
+
+    window.addEventListener('scroll', opacidadDeElementos);
+
+    return () => {
+      window.removeEventListener('scroll', opacidadDeElementos);
+    };
   }, []);
 
   return (

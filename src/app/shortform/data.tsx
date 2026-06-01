@@ -7,6 +7,13 @@ export const projects = [
     img: '/star_web.jpeg',
   },
   {
+    titleEn: 'ESCENA FINAL',
+    titleEs: 'ESCENA FINAL',
+    title: 'ESCENA FINAL',
+    href: '/shortform/escena-final/trailer',
+    img: '/efinal_web.jpeg',
+  },
+  {
     titleEn: 'BABASÓNICOS | ADVERTENCIA',
     titleEs: 'BABASÓNICOS | ADVERTENCIA',
     title: 'BABASÓNICOS | ADVERTENCIA',
@@ -19,13 +26,6 @@ export const projects = [
     title: 'BABASÓNICOS | TAJADA',
     href: '/shortform/babasonicos/tajada',
     img: '/tajada_web.jpeg',
-  },
-  {
-    titleEn: 'ESCENA FINAL',
-    titleEs: 'ESCENA FINAL',
-    title: 'ESCENA FINAL',
-    href: '/shortform/escena-final/trailer',
-    img: '/efinal_web.jpeg',
   },
   {
     titleEn: 'NETFLIX | ABRAZA TODO LO QUE ERES',
