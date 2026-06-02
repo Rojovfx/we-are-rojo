@@ -55,16 +55,20 @@ const MobileHeader = () => {
   };
 
   const handleButtonClick = () => {
-    if(isOpen){
-      if (mobileMenuRef.current) {
-        mobileMenuRef.current.style.top = '-100vh'
+    const menu:any = document.getElementsByClassName('mobile-header')[0]
+    const margenSuperiorMenu = menu.getBoundingClientRect().top;
+    if(margenSuperiorMenu < 25){
+      if(isOpen){
+        if (mobileMenuRef.current) {
+          mobileMenuRef.current.style.top = '-100vh'
+        }
+        cruzAHamburguesa()
+        setTimeout(
+          ()=>{setIsOpen(!isOpen);},500
+        )
+      }else{
+        setIsOpen(!isOpen);
       }
-      cruzAHamburguesa()
-      setTimeout(
-        ()=>{setIsOpen(!isOpen);},500
-      )
-    }else{
-      setIsOpen(!isOpen);
     }
   };
 
