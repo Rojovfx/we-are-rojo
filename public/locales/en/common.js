@@ -12,8 +12,8 @@ export const english = {
       text: 'High-end visual effects studio for episodics and feature films. Built on a robust \
       pipeline and a senior team with over 20 years of experience, ROJO Studio is equipped to take \
       on large-scale projects for international productions, delivering complex sequences with \
-      precision and creative rigor. Based in the Canary Islands, Spain. Working with productions \
-      across Europe, Latin America and the US.',
+      precision and creative rigor. Operating from our hubs in Tenerife, Spain, and Buenos Aires, \
+      Argentina. Delivering high-end VFX for productions across Europe, Latin America, and the US.',
       //subtext:
         //'We are growing constantly, looking for new challenges and projects to take on.',
     },
