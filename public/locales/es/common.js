@@ -13,8 +13,8 @@ export const spanish = {
       Con una infraestructura técnica sólida y un equipo senior de más de 20 años de experiencia, \
       ROJO Studio está preparado para asumir proyectos de gran escala para producciones \
       internacionales, entregando secuencias complejas con precisión y rigor creativo. \
-      Con base en las Islas Canarias, España. Trabajando con producciones de Europa, \
-      Latinoamérica y Estados Unidos.',
+      Con base en Tenerife, España y en Buenos Aires, Argentina. Realizando high-end VFX \
+      para producciones de Europa, Latinoamérica y USA.',
       //subtext:
         //'Estamos en constante crecimiento, en búsqueda de nuevos desafíos y proyectos.',
     },
