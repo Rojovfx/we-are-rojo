@@ -1,5 +1,11 @@
 export const projects = [
   {
+    titleEn: 'THE MATCH',
+    titleEs: 'EL PARTIDO',
+    href: '/features/el-partido',
+    img: '/el-partido.jpg',
+  },
+  {
     titleEn: '120 BAHADUR',
     titleEs: '120 BAHADUR',
     href: '/features/120-bahadur',

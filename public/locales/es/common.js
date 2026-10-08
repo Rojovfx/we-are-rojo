@@ -130,5 +130,10 @@ export const spanish = {
     synopsis:
       'En la zona rural de Argentina, una niña posee un don extraordinario para comunicarse con los animales. Sus tutores ven en esta habilidad una oportunidad para ganar dinero ofreciendo consultas.',
     date: 'Febrero 2025',
+  },
+  elPartido: {
+    title:'El Partido',
+    synopsis:'Un documental que explora el histórico partido de 1986 entre Argentina e Inglaterra, junto con dos siglos de historia compartida entre ambas naciones.',
+    date: 'Mayo 2026'
   }
 };

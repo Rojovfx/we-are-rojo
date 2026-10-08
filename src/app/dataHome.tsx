@@ -1,5 +1,11 @@
 export const projects = [
   {
+    titleEn: 'THE MATCH',
+    titleEs: 'EL PARTIDO',
+    href: '/features/el-partido',
+    img: '/el-partido.jpg',
+  },
+  {
     titleEn: '120 BAHADUR',
     titleEs: '120 BAHADUR',
     href: '/features/120-bahadur',
@@ -24,12 +30,6 @@ export const projects = [
     titleEs: 'THE GRINGO HUNTERS',
     href: '/episodic/the-gringo-hunters',
     img: '/the-gringo-hunters.jpeg',
-  },
-  {
-    titleEn: '(UN)LUCKY SISTERS',
-    titleEs: 'LAS HERMANAS FANTASTICAS',
-    img: 'lhf.jpg',
-    href: '/features/las-hermanas-fantasticas',
   },
   {
     titleEn: 'TO CATCH A KILLER',
