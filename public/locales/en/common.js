@@ -129,6 +129,11 @@ export const english = {
     synopsis:
       'In the Argentinian countryside, a child\'s special gift gives her opportunistic guardians the idea of offering consultations with an animal medium in order to earn a living.',
     date: 'Feb 2025',
+  },
+  elPartido: {
+    title:'The Match',
+    synopsis:'A documentary that explores the historic 1986 match between Argentina and England alongside two centuries of shared history between both nations.',
+    date: 'May 2026'
   }
 };
 

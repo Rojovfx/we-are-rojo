@@ -13,7 +13,7 @@ export const spanish = {
       Con una infraestructura técnica sólida y un equipo senior de más de 20 años de experiencia, \
       ROJO Studio está preparado para asumir proyectos de gran escala para producciones \
       internacionales, entregando secuencias complejas con precisión y rigor creativo. \
-      Con base en Tenerife, España y en Buenos Aires, Argentina. Realizando high-end VFX \
+      Con bases en Tenerife, España y en Buenos Aires, Argentina. Realizando high-end VFX \
       para producciones de Europa, Latinoamérica y USA.',
       //subtext:
         //'Estamos en constante crecimiento, en búsqueda de nuevos desafíos y proyectos.',
@@ -130,5 +130,10 @@ export const spanish = {
     synopsis:
       'En la zona rural de Argentina, una niña posee un don extraordinario para comunicarse con los animales. Sus tutores ven en esta habilidad una oportunidad para ganar dinero ofreciendo consultas.',
     date: 'Febrero 2025',
+  },
+  elPartido: {
+    title:'El Partido',
+    synopsis:'Un documental que explora el histórico partido de 1986 entre Argentina e Inglaterra, junto con dos siglos de historia compartida entre ambas naciones.',
+    date: 'Mayo 2026'
   }
 };
