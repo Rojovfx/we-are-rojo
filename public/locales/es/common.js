@@ -132,7 +132,7 @@ export const spanish = {
     date: 'Febrero 2025',
   },
   elPartido: {
-    title:'El Partido',
+    title:'EL PARTIDO',
     synopsis:'Un documental que explora el histórico partido de 1986 entre Argentina e Inglaterra, junto con dos siglos de historia compartida entre ambas naciones.',
     date: 'Mayo 2026'
   }

@@ -131,7 +131,7 @@ export const english = {
     date: 'Feb 2025',
   },
   elPartido: {
-    title:'The Match',
+    title:'THE MATCH',
     synopsis:'A documentary that explores the historic 1986 match between Argentina and England alongside two centuries of shared history between both nations.',
     date: 'May 2026'
   }
