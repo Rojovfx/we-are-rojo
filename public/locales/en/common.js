@@ -103,7 +103,10 @@ export const english = {
   heweliusz: {
     title: 'HEWELIUSZ',
     synopsis:
-      'In 1993, the Polish ferry MS Jan Heweliusz capsizes off the coast of Rügen in the Baltic Sea. The crew and passengers struggle to survive a lethal storm while ashore their shattered families search for justice and answers.',
+      'Recreating a sea, from fluid simulation to final composite.\
+      \n\nHeweliusz is a Netflix miniseries based on the sinking of the Polish ferry MS Jan Heweliusz in 1993, one of the worst peacetime maritime disasters in Polish history.\
+      \n\nThe production required recreating extreme wind conditions on open sea, seamlessly integrated with live action footage. Our challenge: Large-scale fluid surface simulation integrated with live action.\
+      \n\nThe series premiered on Netflix in November 2025 and reached the Top 10 in 65 countries, accumulating over 17 million viewing hours in its first four days.',
     date: 'Nov 2025',
   },
   theGringoHunters: {
@@ -115,13 +118,19 @@ export const english = {
   cometierra: {
     title: 'EARTHEATER',
     synopsis:
-      'A girl from Mexico City suburbs gains powers to communicate with the earth, solving crimes. Joining misfit friends, she confronts her troubled past amid neighborhood violence and disappearances, discovering her identity.',
+      'Building the Underworld, from digital matte paintings to final composite.\
+      \n\nCometierra is a supernatural drama series based on the acclaimed novel by Dolores Reye and adapted by Daniel Burman.\
+      The story follows Aylín, a teenager from the outskirts of Mexico City who gains the ability to commune with the earth. And with the dead.\
+      \n\nThe production required building a fully believable Underworld space, seamlessly integrated with liveaction footage. Our challenge was the creation of the Underworld environment through large-scale digital matte paintings integrated with live action.\
+      \n\nThe series premiered on Prime Video in October 2025.',
     date: 'Oct 2025',
   },  
   bahadur: {
     title: '120 BAHADUR',
     synopsis:
-      'Valiant Indian soldiers fight against Chinese troops during the 1962 Sino-Indian War, preventing a potential occupation of Ladakh region in the Battle of Rezang La.',
+      '120 soldiers against 3000. Crowds, explosions and matte paintings for a real battle.\
+      \n\n120 Bahadur is an Indian historical war film based on the Battle of Rezang La, fought on November 18, 1962 during the Sino-Indian War, when 120 soldiers of Charlie Company defended their position against a Chinese contingent of 3,000 men.\
+      \n\nThe production required recreating at cinematic scale the tension and vertigo of those war scenes with crowds of soldiers, explosions and period backgrounds integrated into live action footage. The biggest challenge was building the visual scale of the battle through digital crowds, explosions and digital matte paintings that could sustain the dramatic weight of each sequence without breaking immersion.',
     date: 'Nov 2025',
   },
   elMensaje: {
@@ -132,7 +141,10 @@ export const english = {
   },
   elPartido: {
     title:'THE MATCH',
-    synopsis:'A documentary that explores the historic 1986 match between Argentina and England alongside two centuries of shared history between both nations.',
+    synopsis:'Archival footage, digital environments and screen replacements to bring a historic match back to life.\
+              \n\nEl Partido (The Match) is a documentary that explores the historic 1986 match between Argentina and England alongside two centuries of shared history between both nations.\
+              \n\nThe production required integrating archival material, screen replacements, and fully digital environments into a unified cinematic experience. Our biggest challenge was recreating complex 3D environments—including the stadium, grandstands, and museum spaces—while restoring and intervening historical footage to enhance visual narrative without breaking authenticity.\
+              \n\nThe film premiered at the 2026 Cannes Film Festival.',
     date: 'May 2026'
   }
 };

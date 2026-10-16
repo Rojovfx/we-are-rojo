@@ -104,7 +104,10 @@ export const spanish = {
   heweliusz: {
     title: 'HEWELIUSZ',
     synopsis:
-      'En 1993, el transbordador polaco MS Jan Heweliusz vuelca frente a la costa de Rügen, en el mar Báltico. La tripulación y los pasajeros luchan por sobrevivir a una letal tormenta mientras en tierra sus familias, destrozadas, buscan justicia y respuestas.',
+      'Recreando un mar, desde la simulación de fluidos hasta la composición final.\
+      \n\nHeweliusz es una miniserie de Netflix basada en el hundimiento del ferri polaco MS Jan Heweliusz en 1993, uno de los peores desastres marítimos en tiempos de paz en la historia de Polonia.\
+      \n\nLa producción requirió recrear condiciones extremas de viento en alta mar, integradas a la perfección con el rodaje en vivo. Nuestro desafío: simulación de la superficie de fluidos a gran escala integrada con live-action.\
+      \n\nLa serie se estrenó en Netflix en noviembre de 2025 y alcanzó el Top 10 en 65 países, acumulando más de 17 millones de horas de visualización en sus primeros cuatro días.',
     date: 'Noviembre 2025',
   },
   theGringoHunters: {
@@ -116,13 +119,18 @@ export const spanish = {
   cometierra: {
     title: 'COMETIERRA',
     synopsis:
-      'Una chica de las afueras de la Ciudad de México adquiere el poder de comunicarse con la tierra. Resolviendo crímenes y uniéndose a amigos marginados, enfrenta su turbulento pasado en medio de la violencia vecinal y desapariciones.',
+      'Construyendo el Inframundo, desde matte paintings digitales hasta la composición final.\
+      \n\nCometierra es una serie de drama sobrenatural basada en la aclamada novela de Dolores Reyes y adaptada por Daniel Burman. La historia sigue a Aylín, una adolescente de las afueras de la Ciudad de México que obtiene la habilidad de comunicarse con la tierra. Y con los muertos.\
+      \n\nLa producción requirió construir un espacio del Inframundo completamente creíble, integrado a la perfección con el rodaje en vivo. Nuestro desafío fue la creación del entorno del Inframundo a través de matte paintings digitales a gran escala integrados con live-action.\
+      \n\nLa serie se estrenó en Prime Video en octubre de 2025.',
     date: 'Octubre 2025',
   },
   bahadur: {
     title: '120 BAHADUR',
     synopsis:
-      'Los soldados indios luchan contra las tropas chinas durante la guerra sino-india de 1962, impidiendo una posible ocupación de la región de Ladakh en la batalla de Rezang La.',
+      '120 soldados contra 3000. Multitudes, explosiones y matte paintings para crear una batalla real.\
+      \n\n120 Bahadur es una película de guerra histórica india basada en la Batalla de Rezang La, librada el 18 de noviembre de 1962 durante la guerra sino-india, cuando 120 soldados de la Compañía Charlie defendieron su posición contra un contingente chino de 3000 hombres.\
+      \n\nLa producción requirió recrear a escala cinematográfica la tensión y el vértigo de esas escenas bélicas con multitudes de soldados, explosiones y fondos de época integrados con el rodaje en vivo. El mayor desafío fue construir la escala visual de la batalla a través de crowds digitales, explosiones y matte paintings digitales que pudieran sostener el peso dramático de cada secuencia sin romper la inmersión.',
     date: 'Noviembre 2025',
   },
   elMensaje: {
@@ -133,7 +141,10 @@ export const spanish = {
   },
   elPartido: {
     title:'EL PARTIDO',
-    synopsis:'Un documental que explora el histórico partido de 1986 entre Argentina e Inglaterra, junto con dos siglos de historia compartida entre ambas naciones.',
+    synopsis:'Material de archivo, entornos digitales y reemplazos de pantallas para revivir un partido histórico.\
+              \n\nEl Partido es un documental que explora el histórico partido de 1986 entre Argentina e Inglaterra junto a dos siglos de historia compartida entre ambas naciones.\
+              \n\nLa producción requirió integrar material de archivo, reemplazos de pantallas y entornos completamente digitales en una experiencia cinematográfica unificada. Nuestro mayor desafío fue recrear entornos 3D complejos —incluidos el estadio, las tribunas y los espacios del museo— mientras restaurábamos e interveníamos el material histórico para potenciar la narrativa visual sin perder autenticidad.\
+              \n\nLa película se estrenó en el Festival de Cine de Cannes de 2026.',
     date: 'Mayo 2026'
   }
 };
