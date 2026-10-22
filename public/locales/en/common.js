@@ -146,6 +146,13 @@ export const english = {
               \n\nThe production required integrating archival material, screen replacements, and fully digital environments into a unified cinematic experience. Our biggest challenge was recreating complex 3D environments—including the stadium, grandstands, and museum spaces—while restoring and intervening historical footage to enhance visual narrative without breaking authenticity.\
               \n\nThe film premiered at the 2026 Cannes Film Festival.',
     date: 'May 2026'
+  },
+  elCirculo: {
+    title:'INSIDE THE CIRCLE',
+    synopsis:'A high-stakes murder and a web of corruption. CG helicopters, digital crowds and action-packed sequences for a political thriller.\
+              \n\nInside the Circle is a drama series based on Jorge Zepeda Patterson\'s novel Los Corruptores. The story follows four childhood friends whose lives unravel after the murder of a renowned actress, forcing them into a high-stakes network of political blackmail and dark secrets that test their loyalty.\
+              \n\nOur work spanned a wide range of 3D and 2D visual effects, from CG helicopters, vehicles and digital crowds to subtle CG moths and atmospheric effects such as rain, mist and muzzle flashes. The challenge was to make every element feel physically grounded and seamlessly integrated into the live-action footage, while maintaining visual consistency across complex day-for-night conversions and intense action sequences that heighten the story\'s suspense.',
+    date: 'Oct 2026'
   }
 };
 
