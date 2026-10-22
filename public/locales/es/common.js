@@ -146,5 +146,12 @@ export const spanish = {
               \n\nLa producción requirió integrar material de archivo, reemplazos de pantallas y entornos completamente digitales en una experiencia cinematográfica unificada. Nuestro mayor desafío fue recrear entornos 3D complejos —incluidos el estadio, las tribunas y los espacios del museo— mientras restaurábamos e interveníamos el material histórico para potenciar la narrativa visual sin perder autenticidad.\
               \n\nLa película se estrenó en el Festival de Cine de Cannes de 2026.',
     date: 'Mayo 2026'
+  },
+  elCirculo: {
+    title:'EL CIRCULO',
+    synopsis:'Un asesinato de alto riesgo y una red de corrupción. Helicópteros CGI, crowds y secuencias cargadas de acción para un thriller político.\
+              \n\nEl Circulo es una serie dramática basada en la novela Los Corruptores, de Jorge Zepeda Patterson. La historia sigue a cuatro amigos de la infancia cuyas vidas se desmoronan tras el asesinato de una reconocida actriz, lo que los arrastra a una peligrosa red de chantaje político y oscuros secretos que pondrán a prueba su lealtad.\
+              \n\nNuestro trabajo abarcó una amplia gama de efectos visuales en 2D y 3D: desde helicópteros, vehículos y crowds digitales, hasta sutiles polillas y efectos atmosféricos como lluvia, niebla y  muzzleflashes. El desafío consistió en lograr que cada elemento se sintiera físicamente creíble e integrado a la perfección con el metraje de acción real, manteniendo la coherencia visual a lo largo de complejas conversiones day-for-night e intensas secuencias de acción que elevan el suspenso de la historia.',
+    date: 'Octubre 2026'
   }
 };

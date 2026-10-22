@@ -1,5 +1,11 @@
 export const projects = [
   {
+    titleEn: 'INSIDE THE CIRCLE',
+    titleEs: 'EL CIRCULO',
+    href: '/episodic/el-circulo',
+    img: '/el-circulo-inside-the-circle.jpg',
+  },
+  {
     titleEn: 'HEWELIUSZ',
     title: 'HEWELIUSZ',
     titleEs: 'HEWELIUSZ',

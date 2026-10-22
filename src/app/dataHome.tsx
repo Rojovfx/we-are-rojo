@@ -1,5 +1,11 @@
 export const projects = [
   {
+    titleEn: 'INSIDE THE CIRCLE',
+    titleEs: 'EL CIRCULO',
+    href: '/episodic/el-circulo',
+    img: '/el-circulo-inside-the-circle.jpg',
+  },
+  {
     titleEn: 'THE MATCH',
     titleEs: 'EL PARTIDO',
     href: '/features/el-partido',
@@ -23,13 +29,6 @@ export const projects = [
     titleEs: 'COMETIERRA',
     href: '/episodic/cometierra',
     img: '/cometierra-eartheater.jpg',
-  },
-  {
-    titleEn: 'THE GRINGO HUNTERS',
-    title: 'THE GRINGO HUNTERS',
-    titleEs: 'THE GRINGO HUNTERS',
-    href: '/episodic/the-gringo-hunters',
-    img: '/the-gringo-hunters.jpeg',
   },
   {
     titleEn: 'TO CATCH A KILLER',
